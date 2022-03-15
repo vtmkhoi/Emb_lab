@@ -1,0 +1,409 @@
+
+nhom2-week7-PWM.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000027a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000226  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000027a  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000002ac  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000038  00000000  00000000  000002e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000ba0  00000000  00000000  00000320  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000870  00000000  00000000  00000ec0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000468  00000000  00000000  00001730  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000054  00000000  00000000  00001b98  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000044f  00000000  00000000  00001bec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000220  00000000  00000000  0000203b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  0000225b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	25 d0       	rcall	.+74     	; 0xe4 <main>
+  9a:	c3 c0       	rjmp	.+390    	; 0x222 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <PWM_vInit>:
+    /* 
+       Start Timer 1 with clock prescaler CLK/8 and phase correct 
+       10-bit PWM mode. Output on PB6 (OC1B). Resolution is 1.09 us.
+       Frequency is 450 Hz.
+    */
+    TCCR3A =  (0<<COM3A1)|(0<<COM3A0)|(1<<COM3B1)|(0<<COM3B0)
+  9e:	83 e2       	ldi	r24, 0x23	; 35
+  a0:	80 93 8b 00 	sts	0x008B, r24	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+             |(0<<COM3C1)|(0<<COM3C0)|(1<<WGM31) |(1<<WGM30);
+
+    TCCR3B =  (0<<ICNC3) |(0<<ICES3) |(0<<WGM33) |(0<<WGM32)
+  a4:	82 e0       	ldi	r24, 0x02	; 2
+  a6:	80 93 8a 00 	sts	0x008A, r24	; 0x80008a <__TEXT_REGION_LENGTH__+0x7e008a>
+             |(0<<CS32)  |(1<<CS31)  |(0<<CS30);
+
+    // Reset counter
+    TCNT3 = 0;
+  aa:	10 92 89 00 	sts	0x0089, r1	; 0x800089 <__TEXT_REGION_LENGTH__+0x7e0089>
+  ae:	10 92 88 00 	sts	0x0088, r1	; 0x800088 <__TEXT_REGION_LENGTH__+0x7e0088>
+
+    // Set duty cycle to 0%
+    OCR3B  = 0;
+  b2:	10 92 85 00 	sts	0x0085, r1	; 0x800085 <__TEXT_REGION_LENGTH__+0x7e0085>
+  b6:	10 92 84 00 	sts	0x0084, r1	; 0x800084 <__TEXT_REGION_LENGTH__+0x7e0084>
+  ba:	08 95       	ret
+
+000000bc <Ioinit>:
+	// set top value
+	//ICR3 = 10000;
+}
+void Ioinit(void){
+	DDRD |= 0x00;
+  bc:	81 b3       	in	r24, 0x11	; 17
+  be:	81 bb       	out	0x11, r24	; 17
+	DDRE |= (1<<PE4)|(1<<PE2)|(1<<PE3);
+  c0:	82 b1       	in	r24, 0x02	; 2
+  c2:	8c 61       	ori	r24, 0x1C	; 28
+  c4:	82 b9       	out	0x02, r24	; 2
+	PORTE &=~ (1<<PE4)|(1<<PE2)|(1<<PE3);
+  c6:	83 b1       	in	r24, 0x03	; 3
+  c8:	8f 7e       	andi	r24, 0xEF	; 239
+  ca:	83 b9       	out	0x03, r24	; 3
+  cc:	08 95       	ret
+
+000000ce <PWM_vSetDutyCycle>:
+}
+void PWM_vSetDutyCycle(uint16_t u16DutyCycle)
+{
+    // Clip parameter to maximum value
+    if (u16DutyCycle > PWM_MAX_DUTY_CYCLE)
+  ce:	81 15       	cp	r24, r1
+  d0:	24 e0       	ldi	r18, 0x04	; 4
+  d2:	92 07       	cpc	r25, r18
+  d4:	10 f0       	brcs	.+4      	; 0xda <PWM_vSetDutyCycle+0xc>
+    {
+        u16DutyCycle = PWM_MAX_DUTY_CYCLE;
+  d6:	8f ef       	ldi	r24, 0xFF	; 255
+  d8:	93 e0       	ldi	r25, 0x03	; 3
+    }
+
+    OCR3B = u16DutyCycle;
+  da:	90 93 85 00 	sts	0x0085, r25	; 0x800085 <__TEXT_REGION_LENGTH__+0x7e0085>
+  de:	80 93 84 00 	sts	0x0084, r24	; 0x800084 <__TEXT_REGION_LENGTH__+0x7e0084>
+  e2:	08 95       	ret
+
+000000e4 <main>:
+int main(void)
+{
+	//uint16_t incrflag;
+	uint16_t ledIntensity = 0;
+    // Set LED_O as output pin
+    DDR_LED_O |= (1<<BIT_LED_O);
+  e4:	87 b3       	in	r24, 0x17	; 23
+  e6:	80 64       	ori	r24, 0x40	; 64
+  e8:	87 bb       	out	0x17, r24	; 23
+	DDRE |= (1<<PE4);
+  ea:	82 b1       	in	r24, 0x02	; 2
+  ec:	80 61       	ori	r24, 0x10	; 16
+  ee:	82 b9       	out	0x02, r24	; 2
+	//PORTE &=~ (1<<PE4);
+    // Initialise PWM
+    PWM_vInit();
+  f0:	d6 df       	rcall	.-84     	; 0x9e <PWM_vInit>
+	Ioinit();
+  f2:	e4 df       	rcall	.-56     	; 0xbc <Ioinit>
+  f4:	8f ef       	ldi	r24, 0xFF	; 255
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  f6:	97 e4       	ldi	r25, 0x47	; 71
+  f8:	01 97       	sbiw	r24, 0x01	; 1
+  fa:	f1 f7       	brne	.-4      	; 0xf8 <main+0x14>
+  fc:	00 c0       	rjmp	.+0      	; 0xfe <main+0x1a>
+  fe:	00 00       	nop
+ 100:	80 e0       	ldi	r24, 0x00	; 0
+	
+   
+    // Repeat indefinitely
+    while(1)
+    {
+	   PWM_vSetDutyCycle(1024);
+ 102:	94 e0       	ldi	r25, 0x04	; 4
+ 104:	e4 df       	rcall	.-56     	; 0xce <PWM_vSetDutyCycle>
+ 106:	83 b1       	in	r24, 0x03	; 3
+	   PORTE|=(1<<PE2);
+ 108:	84 60       	ori	r24, 0x04	; 4
+ 10a:	83 b9       	out	0x03, r24	; 3
+ 10c:	83 b1       	in	r24, 0x03	; 3
+	   PORTE&=~(1<<PE3);
+ 10e:	87 7f       	andi	r24, 0xF7	; 247
+ 110:	83 b9       	out	0x03, r24	; 3
+ 112:	9f ef       	ldi	r25, 0xFF	; 255
+ 114:	2f e7       	ldi	r18, 0x7F	; 127
+ 116:	80 e7       	ldi	r24, 0x70	; 112
+ 118:	91 50       	subi	r25, 0x01	; 1
+ 11a:	20 40       	sbci	r18, 0x00	; 0
+ 11c:	80 40       	sbci	r24, 0x00	; 0
+ 11e:	e1 f7       	brne	.-8      	; 0x118 <main+0x34>
+ 120:	00 c0       	rjmp	.+0      	; 0x122 <main+0x3e>
+ 122:	00 00       	nop
+	   _delay_ms(5000);
+	   
+	   PWM_vSetDutyCycle(512);
+ 124:	80 e0       	ldi	r24, 0x00	; 0
+ 126:	92 e0       	ldi	r25, 0x02	; 2
+ 128:	d2 df       	rcall	.-92     	; 0xce <PWM_vSetDutyCycle>
+ 12a:	83 b1       	in	r24, 0x03	; 3
+	  PORTE|=(1<<PE2);
+ 12c:	84 60       	ori	r24, 0x04	; 4
+ 12e:	83 b9       	out	0x03, r24	; 3
+ 130:	83 b1       	in	r24, 0x03	; 3
+	  PORTE&=~(1<<PE3);
+ 132:	87 7f       	andi	r24, 0xF7	; 247
+ 134:	83 b9       	out	0x03, r24	; 3
+ 136:	9f ef       	ldi	r25, 0xFF	; 255
+ 138:	2f e7       	ldi	r18, 0x7F	; 127
+ 13a:	80 e7       	ldi	r24, 0x70	; 112
+ 13c:	91 50       	subi	r25, 0x01	; 1
+ 13e:	20 40       	sbci	r18, 0x00	; 0
+ 140:	80 40       	sbci	r24, 0x00	; 0
+ 142:	e1 f7       	brne	.-8      	; 0x13c <main+0x58>
+ 144:	00 c0       	rjmp	.+0      	; 0x146 <main+0x62>
+ 146:	00 00       	nop
+	  _delay_ms(5000);
+
+	   PWM_vSetDutyCycle(256);
+ 148:	80 e0       	ldi	r24, 0x00	; 0
+ 14a:	91 e0       	ldi	r25, 0x01	; 1
+ 14c:	c0 df       	rcall	.-128    	; 0xce <PWM_vSetDutyCycle>
+ 14e:	83 b1       	in	r24, 0x03	; 3
+	   PORTE|=(1<<PE2);
+ 150:	84 60       	ori	r24, 0x04	; 4
+ 152:	83 b9       	out	0x03, r24	; 3
+ 154:	83 b1       	in	r24, 0x03	; 3
+	   PORTE&=~(1<<PE3);
+ 156:	87 7f       	andi	r24, 0xF7	; 247
+ 158:	83 b9       	out	0x03, r24	; 3
+ 15a:	9f ef       	ldi	r25, 0xFF	; 255
+ 15c:	2f e7       	ldi	r18, 0x7F	; 127
+ 15e:	80 e7       	ldi	r24, 0x70	; 112
+ 160:	91 50       	subi	r25, 0x01	; 1
+ 162:	20 40       	sbci	r18, 0x00	; 0
+ 164:	80 40       	sbci	r24, 0x00	; 0
+ 166:	e1 f7       	brne	.-8      	; 0x160 <main+0x7c>
+ 168:	00 c0       	rjmp	.+0      	; 0x16a <main+0x86>
+ 16a:	00 00       	nop
+	   _delay_ms(5000);
+
+	   PWM_vSetDutyCycle(128);
+ 16c:	80 e8       	ldi	r24, 0x80	; 128
+ 16e:	90 e0       	ldi	r25, 0x00	; 0
+ 170:	ae df       	rcall	.-164    	; 0xce <PWM_vSetDutyCycle>
+ 172:	83 b1       	in	r24, 0x03	; 3
+	   PORTE|=(1<<PE2);
+ 174:	84 60       	ori	r24, 0x04	; 4
+ 176:	83 b9       	out	0x03, r24	; 3
+ 178:	83 b1       	in	r24, 0x03	; 3
+	   PORTE&=~(1<<PE3);
+ 17a:	87 7f       	andi	r24, 0xF7	; 247
+ 17c:	83 b9       	out	0x03, r24	; 3
+ 17e:	9f ef       	ldi	r25, 0xFF	; 255
+ 180:	2f e7       	ldi	r18, 0x7F	; 127
+ 182:	80 e7       	ldi	r24, 0x70	; 112
+ 184:	91 50       	subi	r25, 0x01	; 1
+ 186:	20 40       	sbci	r18, 0x00	; 0
+ 188:	80 40       	sbci	r24, 0x00	; 0
+ 18a:	e1 f7       	brne	.-8      	; 0x184 <main+0xa0>
+ 18c:	00 c0       	rjmp	.+0      	; 0x18e <main+0xaa>
+ 18e:	00 00       	nop
+	   _delay_ms(5000);
+
+	   PWM_vSetDutyCycle(0);
+ 190:	80 e0       	ldi	r24, 0x00	; 0
+ 192:	90 e0       	ldi	r25, 0x00	; 0
+ 194:	9c df       	rcall	.-200    	; 0xce <PWM_vSetDutyCycle>
+ 196:	83 b1       	in	r24, 0x03	; 3
+	   PORTE|=(1<<PE2);
+ 198:	84 60       	ori	r24, 0x04	; 4
+ 19a:	83 b9       	out	0x03, r24	; 3
+ 19c:	83 b1       	in	r24, 0x03	; 3
+	   PORTE&=~(1<<PE3);
+ 19e:	87 7f       	andi	r24, 0xF7	; 247
+ 1a0:	83 b9       	out	0x03, r24	; 3
+ 1a2:	9f ef       	ldi	r25, 0xFF	; 255
+ 1a4:	2f e7       	ldi	r18, 0x7F	; 127
+ 1a6:	80 e7       	ldi	r24, 0x70	; 112
+ 1a8:	91 50       	subi	r25, 0x01	; 1
+ 1aa:	20 40       	sbci	r18, 0x00	; 0
+ 1ac:	80 40       	sbci	r24, 0x00	; 0
+ 1ae:	e1 f7       	brne	.-8      	; 0x1a8 <main+0xc4>
+ 1b0:	00 c0       	rjmp	.+0      	; 0x1b2 <main+0xce>
+ 1b2:	00 00       	nop
+	   _delay_ms(5000);
+	        	 
+	   PWM_vSetDutyCycle(128);
+ 1b4:	80 e8       	ldi	r24, 0x80	; 128
+ 1b6:	90 e0       	ldi	r25, 0x00	; 0
+ 1b8:	8a df       	rcall	.-236    	; 0xce <PWM_vSetDutyCycle>
+ 1ba:	83 b1       	in	r24, 0x03	; 3
+	   PORTE &=~(1<<PE2);
+ 1bc:	8b 7f       	andi	r24, 0xFB	; 251
+ 1be:	83 b9       	out	0x03, r24	; 3
+ 1c0:	83 b1       	in	r24, 0x03	; 3
+	   PORTE|=(1<<PE3);
+ 1c2:	88 60       	ori	r24, 0x08	; 8
+ 1c4:	83 b9       	out	0x03, r24	; 3
+ 1c6:	9f ef       	ldi	r25, 0xFF	; 255
+ 1c8:	2f e7       	ldi	r18, 0x7F	; 127
+ 1ca:	80 e7       	ldi	r24, 0x70	; 112
+ 1cc:	91 50       	subi	r25, 0x01	; 1
+ 1ce:	20 40       	sbci	r18, 0x00	; 0
+ 1d0:	80 40       	sbci	r24, 0x00	; 0
+ 1d2:	e1 f7       	brne	.-8      	; 0x1cc <main+0xe8>
+ 1d4:	00 c0       	rjmp	.+0      	; 0x1d6 <main+0xf2>
+ 1d6:	00 00       	nop
+	   _delay_ms(5000);
+
+	   PWM_vSetDutyCycle(256);
+ 1d8:	80 e0       	ldi	r24, 0x00	; 0
+ 1da:	91 e0       	ldi	r25, 0x01	; 1
+ 1dc:	78 df       	rcall	.-272    	; 0xce <PWM_vSetDutyCycle>
+ 1de:	83 b1       	in	r24, 0x03	; 3
+	   PORTE &=~(1<<PE2);
+ 1e0:	8b 7f       	andi	r24, 0xFB	; 251
+ 1e2:	83 b9       	out	0x03, r24	; 3
+ 1e4:	83 b1       	in	r24, 0x03	; 3
+	   PORTE|=(1<<PE3);
+ 1e6:	88 60       	ori	r24, 0x08	; 8
+ 1e8:	83 b9       	out	0x03, r24	; 3
+ 1ea:	9f ef       	ldi	r25, 0xFF	; 255
+ 1ec:	2f e7       	ldi	r18, 0x7F	; 127
+ 1ee:	80 e7       	ldi	r24, 0x70	; 112
+ 1f0:	91 50       	subi	r25, 0x01	; 1
+ 1f2:	20 40       	sbci	r18, 0x00	; 0
+ 1f4:	80 40       	sbci	r24, 0x00	; 0
+ 1f6:	e1 f7       	brne	.-8      	; 0x1f0 <main+0x10c>
+ 1f8:	00 c0       	rjmp	.+0      	; 0x1fa <main+0x116>
+ 1fa:	00 00       	nop
+	   _delay_ms(5000);
+	   	     
+	   PWM_vSetDutyCycle(512);
+ 1fc:	80 e0       	ldi	r24, 0x00	; 0
+ 1fe:	92 e0       	ldi	r25, 0x02	; 2
+ 200:	66 df       	rcall	.-308    	; 0xce <PWM_vSetDutyCycle>
+ 202:	83 b1       	in	r24, 0x03	; 3
+	   PORTE &=~(1<<PE2);
+ 204:	8b 7f       	andi	r24, 0xFB	; 251
+ 206:	83 b9       	out	0x03, r24	; 3
+ 208:	83 b1       	in	r24, 0x03	; 3
+	   PORTE|=(1<<PE3);
+ 20a:	88 60       	ori	r24, 0x08	; 8
+ 20c:	83 b9       	out	0x03, r24	; 3
+ 20e:	9f ef       	ldi	r25, 0xFF	; 255
+ 210:	2f e7       	ldi	r18, 0x7F	; 127
+ 212:	80 e7       	ldi	r24, 0x70	; 112
+ 214:	91 50       	subi	r25, 0x01	; 1
+ 216:	20 40       	sbci	r18, 0x00	; 0
+ 218:	80 40       	sbci	r24, 0x00	; 0
+ 21a:	e1 f7       	brne	.-8      	; 0x214 <main+0x130>
+ 21c:	00 c0       	rjmp	.+0      	; 0x21e <main+0x13a>
+ 21e:	00 00       	nop
+ 220:	6f cf       	rjmp	.-290    	; 0x100 <main+0x1c>
+
+00000222 <_exit>:
+ 222:	f8 94       	cli
+
+00000224 <__stop_program>:
+ 224:	ff cf       	rjmp	.-2      	; 0x224 <__stop_program>
